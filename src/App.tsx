@@ -182,7 +182,7 @@ export default function App() {
                 exit={{ opacity: 0, x: -20 }}
                 transition={{ duration: 0.3 }}
               >
-                <Logo />
+                <Logo className="-ml-4 md:-ml-10" />
               </motion.div>
             )}
           </AnimatePresence>
@@ -231,7 +231,7 @@ export default function App() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="mb-2 -ml-20"
+                className="mb-2 -ml-10 md:-ml-20"
               >
                 <img 
                   src="4.png" 
@@ -469,7 +469,7 @@ export default function App() {
                   </div>
                 </motion.div>
 
-                <div className="grid grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-6">
                     <div className="glass p-6 rounded-2xl border-white/10 hover:bg-white/5 transition-all">
                       <div className="text-blue-400 mb-4"><Search size={32} /></div>
@@ -482,7 +482,7 @@ export default function App() {
                       <p className="text-slate-400 text-sm">Deployment of autonomous AI agents to handle complexity.</p>
                     </div>
                   </div>
-                  <div className="space-y-6 pt-12">
+                  <div className="space-y-6 md:pt-12">
                     <div className="glass p-6 rounded-2xl border-white/10 hover:bg-white/5 transition-all">
                       <div className="text-purple-400 mb-4"><Cpu size={32} /></div>
                       <h4 className="text-white font-bold mb-2">The AI</h4>
